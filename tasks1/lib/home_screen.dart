@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 5),
               const Text(
-                'This is a sample Text',
+                'This is a sample Text ',
                 style: TextStyle(color: Colors.white, fontSize: 20),
               )
             ],
