@@ -1,4 +1,4 @@
-task one: 
+task 1 
 <img width="507" height="860" alt="image" src="https://github.com/user-attachments/assets/7b3b10d7-b0e2-477c-bfbd-336164f73546" />
 
 task 2
