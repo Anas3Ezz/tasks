@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:tasks/widgets/action_require_details.dart';
+import 'package:tasks/widgets/action_require_section.dart';
+import 'package:tasks/widgets/galary_details.dart';
+import 'package:tasks/widgets/profile_earns_details.dart';
+import 'package:tasks/widgets/profile_pic_and_number.dart';
 
 class HomeScreenFour extends StatelessWidget {
   const HomeScreenFour({super.key});
@@ -6,46 +11,39 @@ class HomeScreenFour extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(children: [
-        Container(
-          decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  colors: [
-                    Color.fromARGB(255, 56, 129, 211),
-                    Color.fromARGB(255, 204, 60, 94),
-                  ],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  stops: [0.0, 1.0],
-                  tileMode: TileMode.clamp)),
+        backgroundColor: Colors.grey[200],
+        appBar: AppBar(
+          backgroundColor: Colors.grey[200],
+          leading: IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.settings_outlined,
+              size: 30,
+            ),
+          ),
         ),
-        Center(
+        body: const SingleChildScrollView(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(90),
-                ),
-                child: const CircleAvatar(
-                  radius: 90,
-                  child: Icon(
-                    Icons.umbrella_rounded,
-                    size: 60,
-                    color: Colors.red,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 5),
-              const Text(
-                'This is a sample Text ',
-                style: TextStyle(color: Colors.white, fontSize: 20),
-              )
+              ProfilePicAndNumber(),
+              SizedBox(height: 20),
+              ProfileEarnsDetails(),
+              SizedBox(height: 20),
+              ActionRequiredSection(),
+              SizedBox(height: 20),
+              ActionRequiredDetails(),
+              SizedBox(height: 20),
+              Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20.0),
+                  child: Row(children: [
+                    Text('Galary', style: TextStyle(fontSize: 22)),
+                    Spacer(),
+                    Text('See All', style: TextStyle(fontSize: 20))
+                  ])),
+              SizedBox(height: 20),
+              GalaryDetails()
             ],
           ),
-        )
-      ]),
-    );
+        ));
   }
 }

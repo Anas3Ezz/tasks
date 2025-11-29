@@ -6,7 +6,26 @@ class Task2Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: Appbar(),
+        appBar: AppBar(
+          backgroundColor: Colors.blue,
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.menu,
+                color: Colors.white,
+              ),
+            ),
+          ],
+          leading: const Icon(
+            Icons.document_scanner,
+            color: Colors.white,
+          ),
+          title: const Text(
+            'Appointments',
+            style: TextStyle(color: Colors.white),
+          ),
+        ),
         body: const Padding(
           padding: EdgeInsets.all(15),
           child: Column(
@@ -78,28 +97,5 @@ class Task2Screen extends StatelessWidget {
             ],
           ),
         ));
-  }
-
-  AppBar Appbar() {
-    return AppBar(
-      backgroundColor: Colors.blue,
-      actions: [
-        IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.menu,
-            color: Colors.white,
-          ),
-        ),
-      ],
-      leading: const Icon(
-        Icons.document_scanner,
-        color: Colors.white,
-      ),
-      title: const Text(
-        'Appointments',
-        style: TextStyle(color: Colors.white),
-      ),
-    );
   }
 }
