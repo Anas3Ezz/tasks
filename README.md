@@ -4,7 +4,13 @@ task 1
 
 task 2
 
-<img width="516" height="763" alt="image" src="https://github.com/user-attachments/assets/d0c0b4b6-0277-431c-880b-ed6cc72d2e7e" />
+<img width="665" height="868" alt="image" src="https://github.com/user-attachments/assets/262ebc72-0125-4e0f-af99-7bd0a9652a35" />
+
 
 task 3 
 <img width="474" height="759" alt="image" src="https://github.com/user-attachments/assets/492ac607-7cbc-45ed-b4af-c175a08146c3" />
+
+task 4 
+
+<img width="636" height="917" alt="image" src="https://github.com/user-attachments/assets/23beafbd-7db5-49dc-a15b-bffaf4fbc7df" />
+
