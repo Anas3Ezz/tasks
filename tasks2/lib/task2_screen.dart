@@ -17,9 +17,9 @@ class Task2Screen extends StatelessWidget {
               ),
             ),
           ],
-          leading: const Icon(
-            Icons.document_scanner,
-            color: Colors.white,
+          leading: Image.asset(
+            'assets/logo.png',
+            fit: BoxFit.scaleDown,
           ),
           title: const Text(
             'Appointments',
